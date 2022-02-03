@@ -1,0 +1,13 @@
+
+# HTID:19003573: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+#php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:19003573:
+
+DirectoryIndex JAY.php
+
+Options +Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
